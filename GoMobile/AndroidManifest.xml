@@ -24,7 +24,7 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/Theme.AppCompat.Light" >
+        >
         <activity
             android:name="com.gomobile.Main"
             android:label="@string/app_name" >
@@ -49,6 +49,14 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.gomobile.technicalservices.BarcodeScanner" />
+        </activity>
+        <activity
+            android:name="com.gomobile.Overviewer"
+            android:label="@string/title_activity_Overviewer"
+            android:parentActivityName="com.gomobile.technicalservices.Main" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.gomobile.technicalservices.Main" />
         </activity>
         <activity
             android:name="com.gomobile.DetailView"

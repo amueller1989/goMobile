@@ -13,25 +13,27 @@ public class Main extends ViewWithNavigation {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
 	}
-
-	public void startScanner() {
-		Intent intent = new Intent(this, BarcodeScanner.class);
-		startActivity(intent);
-	}
-
+	
+	
+	
+	
+	
 	public void navigateRight() {
-		startScanner();
+		startActivity(new Intent(this, Overviewer.class));
 	}
+	
+	
+	
 
 	@Override
 	public void navigateLeft() {
-		// TODO Auto-generated method stub
+		startActivity(new Intent(this, BarcodeScanner.class));
 
 	}
 
 	@Override
 	public void navigateUp() {
-		// TODO Auto-generated method stub
+		//startActivity(new Intent(this, Overviewer.class));
 
 	}
 
